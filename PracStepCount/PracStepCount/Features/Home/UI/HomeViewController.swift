@@ -12,7 +12,11 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        print("📌", #fileID, ">", #function)
+        renderUI()
+    }
+    
+    private func renderUI() {
+        view.backgroundColor = .blue
     }
 
 }
