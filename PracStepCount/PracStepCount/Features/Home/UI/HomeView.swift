@@ -8,6 +8,12 @@
 import SwiftUI
 
 struct HomeView: View {
+    @ObservedObject var store: HomeStore
+    
+    init(store: HomeStore) {
+        self.store = store
+    }
+    
     var body: some View {
         ZStack {
             Color.white
@@ -17,8 +23,14 @@ struct HomeView: View {
                 Spacer()
                     .frame(height: 40)
                 VStack(spacing: 12) {
-                    CardView(title: "HealthKit", stepCount: "20000")
-                    CardView(title: "Pedometer", stepCount: "20000")
+                    CardView(
+                        title: "HealthKit",
+                        stepCount: "\(Int(store.state.healthKitStepCount))"
+                    )
+                    CardView(
+                        title: "Pedometer",
+                        stepCount: "\(Int(store.state.pedometerStepCount))"
+                    )
                 }
                 Spacer()
             }
@@ -28,5 +40,5 @@ struct HomeView: View {
 }
 
 #Preview {
-    HomeView()
+    HomeView(store: HomeStore(state: HomeState()))
 }

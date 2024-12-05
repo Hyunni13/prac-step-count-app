@@ -9,7 +9,18 @@ import SwiftUI
 import UIKit
 
 class HomeViewController: UIViewController {
-
+    
+    @ObservedObject var store: HomeStore = HomeStore(state: HomeState())
+    
+    init(store: HomeStore) {
+        self.store = store
+        super.init(nibName: nil, bundle: nil)
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -17,7 +28,7 @@ class HomeViewController: UIViewController {
     }
     
     private func renderUI() {
-        let homeHostController = UIHostingController(rootView: HomeView())
+        let homeHostController = UIHostingController(rootView: HomeView(store: store))
         
         addChild(homeHostController)
         homeHostController.didMove(toParent: self)
@@ -32,5 +43,5 @@ class HomeViewController: UIViewController {
             homeHostController.view.trailingAnchor.constraint(equalTo: view.trailingAnchor),
         ])
     }
-
+    
 }
