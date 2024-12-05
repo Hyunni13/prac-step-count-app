@@ -13,10 +13,11 @@ struct StepCountCardView: View {
     var body: some View {
         HStack(alignment: .firstTextBaseline, spacing: 0) {
             Text(stepCount)
-                .font(.system(size: 20))
+                .font(Font.light18)
             Spacer()
                 .frame(width: 5)
             Text("걸음")
+                .font(Font.light16)
             Spacer()
         }
         .padding(.horizontal, 5)

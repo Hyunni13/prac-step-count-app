@@ -13,7 +13,8 @@ struct HomeView: View {
             Spacer()
                 .frame(height: 40)
             HStack {
-                Text("Step Counts")
+                Text("Step Count")
+                    .font(Font.regular24)
                 Spacer()
             }
             Spacer()
