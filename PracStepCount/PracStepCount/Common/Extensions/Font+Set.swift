@@ -13,8 +13,8 @@ extension Font {
         return .custom("Pretendard-Regular", size: 24)
     }
     
-    static var light18: Font {
-        return .custom("Pretendard-Light", size: 18)
+    static var light20: Font {
+        return .custom("Pretendard-light", size: 20)
     }
     
     static var light16: Font {

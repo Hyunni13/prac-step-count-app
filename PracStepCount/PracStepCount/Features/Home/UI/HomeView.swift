@@ -9,24 +9,21 @@ import SwiftUI
 
 struct HomeView: View {
     var body: some View {
-        VStack {
-            Spacer()
-                .frame(height: 40)
-            HStack {
-                Text("Step Count")
-                    .font(Font.regular24)
+        ZStack {
+            Color.white
+                .edgesIgnoringSafeArea(.all)
+            
+            VStack {
+                Spacer()
+                    .frame(height: 40)
+                VStack(spacing: 12) {
+                    CardView(title: "HealthKit", stepCount: "20000")
+                    CardView(title: "Pedometer", stepCount: "20000")
+                }
                 Spacer()
             }
-            Spacer()
-                .frame(height: 37)
-            VStack(spacing: 12) {
-                StepCountCardView(stepCount: "20000")
-                StepCountCardView(stepCount: "20000")
-            }
-            Spacer()
+            .padding(.horizontal, 15)
         }
-        .padding(.leading, 15)
-        .padding(.trailing, 15)
     }
 }
 
