@@ -28,28 +28,28 @@ extension Color {
         self.init(red: red, green: green, blue: blue)
     }
     
-    static var white: Color {
-        return Color(hexCode: "FFFFFF")
-    }
-    
-    static var lightGray: Color {
-        return Color(hexCode: "F2F5FF")
-    }
-    
-    static var gray: Color {
-        return Color(hexCode: "6A6E83")
-    }
-    
-    static var black: Color {
-        return Color(hexCode: "1F1F1F")
-    }
-
-    static var primary: Color {
-        return Color(hexCode: "5A81FA")
-    }
-    
-    static var secondary: Color {
-        return Color(hexCode: "2C3D8F")
-    }
+//    static var white: Color {
+//        return Color(hexCode: "FFFFFF")
+//    }
+//    
+//    static var lightGray: Color {
+//        return Color(hexCode: "F2F5FF")
+//    }
+//    
+//    static var gray: Color {
+//        return Color(hexCode: "6A6E83")
+//    }
+//    
+//    static var black: Color {
+//        return Color(hexCode: "1F1F1F")
+//    }
+//
+//    static var primary: Color {
+//        return Color(hexCode: "5A81FA")
+//    }
+//    
+//    static var secondary: Color {
+//        return Color(hexCode: "2C3D8F")
+//    }
     
 }

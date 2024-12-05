@@ -16,7 +16,7 @@ struct CardView: View {
             HStack(alignment: .firstTextBaseline, spacing: 3) {
                 Text(title)
                     .font(.light20)
-                    .foregroundColor(.black)
+                    .foregroundColor(.BLACK)
                 Spacer()
             }
             Spacer()
@@ -24,15 +24,15 @@ struct CardView: View {
                 Spacer()
                 Text(stepCount)
                     .font(.regular24)
-                    .foregroundColor(.primary)
+                    .foregroundColor(.PRIMARY)
                 Text("Steps")
                     .font(.light16)
-                    .foregroundColor(.gray)
+                    .foregroundColor(.GRAY)
             }
         }
         .frame(height: 80)
         .padding(.all, 12)
-        .background(Color.lightGray)
+        .background(Color.LIGHT_GRAY)
         .cornerRadius(8)
     }
 }

@@ -22,6 +22,7 @@
 		08FCC9982D01AAD300BA956A /* Pretendard-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 08FCC9932D01AAD300BA956A /* Pretendard-Regular.otf */; };
 		08FCC9992D01AAD300BA956A /* Pretendard-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 08FCC9922D01AAD300BA956A /* Pretendard-Light.otf */; };
 		08FCC99B2D01AE8A00BA956A /* Color+Set.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08FCC99A2D01AE8A00BA956A /* Color+Set.swift */; };
+		08FCC9AA2D01BFB600BA956A /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 08FCC9A92D01BFB600BA956A /* Colors.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		08FCC9922D01AAD300BA956A /* Pretendard-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Light.otf"; sourceTree = "<group>"; };
 		08FCC9932D01AAD300BA956A /* Pretendard-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Regular.otf"; sourceTree = "<group>"; };
 		08FCC99A2D01AE8A00BA956A /* Color+Set.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Set.swift"; sourceTree = "<group>"; };
+		08FCC9A92D01BFB600BA956A /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -186,6 +188,7 @@
 			children = (
 				08FCC98A2D01928C00BA956A /* Font */,
 				08FCC9612CFF299A00BA956A /* Assets.xcassets */,
+				08FCC9A92D01BFB600BA956A /* Colors.xcassets */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -333,6 +336,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				08FCC9AA2D01BFB600BA956A /* Colors.xcassets in Resources */,
 				08FCC96D2CFF299A00BA956A /* Assets.xcassets in Resources */,
 				08FCC9942D01AAD300BA956A /* Pretendard-Regular.otf in Resources */,
 				08FCC9952D01AAD300BA956A /* Pretendard-Light.otf in Resources */,
